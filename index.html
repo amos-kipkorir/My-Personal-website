@@ -1,78 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Website</title>
-  <link rel="stylesheet" href="style.css">
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amos Kipkorir | Frontend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="main">
-    <div class="navbar">
-      <div class="icon"> 
-        <h2 class="logo">My Portfolio</h2>
-      </div>
-
-      <div class="menu">
-        <ul>
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT</a></li>
-          <li><a href="#">PROJECTS</a></li>
-          <li><a href="#">CONTACT</a></li>
-     </ul>
-
-  </div>
-  <div class="search">
-    <input class="srch" type="search" name="" placeholder="Type To text">
-    <a href="#"> <button class="btn">search</button></a>
-  </div>
-
-  <img src="https://img.freepik.com/free-photo/side-view-illustrator-drawing-tablet_23-2150040132.jpg?semt=ais_hybrid&w=740" alt="visual design">
-
- 
- <div class="content">
-      <h1>AMOS KIPKORIR</h1>
-      <p class="par">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Repudiandae obcaecati ipsum maiores debitis minima aliquid <br> similique voluptatem laborum porro amet commodi officiis nostrum <br> dolorum tempora, rerum ipsa cupiditate pariatur neque.</p>
     
-      <button class="cn"><a href="#">JOIN ME</a></button>
-       
-      <div>
-        <h3>Hi, I'm AMOS KIPKORIR</h3>
-        <P>Web Developer . Designer . Creator</P>
-      </div>
-
-      <div>
-        <h4>About Me</h4>
-        <p>I'm a passionate developer in building web application using modern technologies. <br> I enjoy solving problems and creating intuitive digital experiences.</p>
-      </div>
-      <div>
-        <h4>My Skills</h4>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>Git and Github</li>
-        </ul>
-      </div>
-      <div>
-        <h3>Contact Me</h3>
-        <p>Feel free to reach me via email or <br> connect with me on social media</p>
-        <a href="amoskipkorir38@gmail.com">Email Me</a>
-        
-      </div>
-      
-
-        <div class="icon">
-             <a href="#"><ion-icon name="logo-facebook"></a>
-             <a href="#"><ion-icon name="logo-instagram"></a>
-             <a href="#"><ion-icon name="logo-twitter"></a>
-             <a href="#"><ion-icon name="logo-google"></a>
-             <a href="#"><ion-icon name="logo-skype"></a>
+    <header>
+        <div class="container">
+            <div class="logo">AK</div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
+    </header>
 
-      </div>
-    </div>
-  </div>
-  <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
-  </body>
-  </html>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Amos Kipkorir</h1>
+                <h2>Frontend Developer</h2>
+                <p>I create beautiful, responsive web experiences with clean, efficient code</p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>                 
+    </section>
+
+    
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>
+                            <i class="fab fa-html5"></i>
+                            HTML5
+                        </li>
+                        <li>
+                            <i class="fab fa-css3-alt"></i>
+                            CSS3/SASS
+                        </li>
+                        <li>
+                            <i class="fab fa-js"></i>
+                            JavaScript (ES6+)
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Methods</h3>
+                    <ul>
+                        <li>
+                            <i class="fab fa-git-alt"></i>
+                            Git & GitHub
+                        </li>
+                        <li>
+                            <i class="fas fa-mobile-alt"></i>
+                            Responsive Design
+                        </li>
+                        <li>
+                            <i class="fas fa-tachometer-alt"></i>
+                            Performance Optimization
+                        </li>
+                        <li>
+                            <i class="fas fa-search"></i>
+                            SEO Principles
+                        </li>
+                        <li>
+                            <i class="fas fa-cogs"></i>
+                            Webpack
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Currently Learning</h3>
+                    <ul>
+                        <li>
+                            <i class="fab fa-node-js"></i>
+                            Node.js
+                        </li>
+                        <li>
+                            <i class="fab fa-figma"></i>
+                            UI/UX Design
+                        </li>
+                        <li>
+                            <i class="fab fa-react-js"></i>
+                            React.js
+                        </li>
+                        <li>
+                            <i class="fas fa-server"></i>
+                            Serverless Architecture
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p>I'm currently available for freelance work and full-time positions. Feel free to reach out!</p>
+                    <div class="contact-details">
+                        <p><i class="fas fa-envelope"></i> amoskipkorir38@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> 0794879224</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Sattelite Riruta, Nairobi</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-codepen"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Amos Kipkorir. All rights reserved.</p>
+            <p>Designed and coded with ❤️</p>
+        </div>
+    </footer>
+
+    <script src = "script.js"></script>
+</body>
+</html>
