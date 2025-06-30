@@ -1,4 +1,4 @@
-/* styles.css */
+
 :root {
   --primary: #5e35b1;
   --primary-dark: #4527a0;
@@ -34,7 +34,7 @@ body {
   padding: 0 20px;
 }
 
-/* Header & Navigation */
+
 header {
   position: fixed;
   top: 0;
@@ -108,7 +108,7 @@ nav ul li a:hover::after {
   cursor: pointer;
 }
 
-/* Hero Section */
+
 .hero {
   padding: 150px 0 100px;
   min-height: 100vh;
@@ -212,7 +212,7 @@ nav ul li a:hover::after {
   line-height: 1.5;
 }
 
-/* Sections */
+
 section {
   padding: 100px 0;
 }
@@ -236,7 +236,7 @@ section {
   border-radius: 2px;
 }
 
-/* Skills Section */
+
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -285,7 +285,7 @@ section {
   border-bottom: none;
 }
 
-/* Projects Section */
+
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -351,7 +351,7 @@ section {
   color: white;
 }
 
-/* Experience Section */
+
 .timeline {
   position: relative;
   max-width: 800px;
@@ -431,7 +431,7 @@ section {
   font-weight: 500;
 }
 
-/* Contact Section */
+
 .contact-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -509,7 +509,7 @@ section {
   min-height: 120px;
 }
 
-/* Blog Section Styles */
+
 .blog-section {
   background: #f9f9f9;
   padding: 80px 0;
@@ -578,7 +578,72 @@ section {
   transform: translateX(5px);
 }
 
-/* Footer */
+/* Header Layout */
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  margin-right: auto; /* Pushes blog link to right */
+}
+
+.blog-nav {
+  margin-left: 30px;
+}
+
+.blog-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 15px;
+  background: #f1e8ff;
+  border-radius: 30px;
+  color: #5e35b1;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.blog-link:hover {
+  background: #5e35b1;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(94, 53, 177, 0.2);
+}
+
+.blog-link i {
+  font-size: 0.9em;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .blog-nav {
+    margin-left: 15px;
+  }
+  
+  .blog-link {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-link span {
+    display: none; /* Hide "Blog" text on small screens */
+  }
+  
+  .blog-link {
+    padding: 10px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+  }
+}
+
+
 footer {
   background: var(--dark);
   color: white;
@@ -590,7 +655,7 @@ footer p {
   margin: 5px 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 900px) {
   .hero .container {
       flex-direction: column;
